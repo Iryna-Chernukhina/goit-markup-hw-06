@@ -56,7 +56,6 @@ img {
 
 .page-header {
   font-size: 16px;
-  font-style: normal;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -97,13 +96,11 @@ img {
   gap: 40px;
 }
 .address {
-  font-style: normal;
   padding-top: 24px;
   padding-bottom: 24px;
 }
 .contakts {
   font-size: 16px;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.32px;
   list-style: none;
@@ -170,8 +167,6 @@ img {
 /** =========== MAIN============== */
 
 .section-name {
-  /* padding-top: 188px;
-  padding-bottom: 188px; */
   padding-top: 72px;
   padding-bottom: 72px;
   background-color: #2e2f42;
@@ -180,7 +175,7 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/dark-bg-mob-1x.jpg);
-  /* max-width: 1440px; */
+
   max-width: 320px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -204,16 +199,10 @@ img {
 }
 .title {
   color: #fff;
-  /* font-size: 56px;
-  line-height: 1.07; */
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.72px;
-  /* letter-spacing: 1.12px;
-   max-width: 496px;
-  font-weight: 500;  */
-  /* margin: 0 auto; */
   text-align: center;
   margin: auto;
   margin-bottom: 72px;
@@ -233,7 +222,6 @@ img {
   height: 56px;
   border: none;
   margin: 0 auto;
-  /* margin-top: 48px; */
   padding: 16px 32px;
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -275,7 +263,6 @@ img {
 }
 .advantages-subtitle {
   font-size: 36px;
-  font-style: normal;
   margin-bottom: 8px;
   font-weight: 700;
   line-height: 1.1;
@@ -285,7 +272,6 @@ img {
 }
 .about-advantages {
   font-size: 16px;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: #434455;
@@ -309,7 +295,6 @@ img {
 }
 .title-what {
   font-size: 36px;
-  font-style: normal;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -483,6 +468,7 @@ img {
 .footer-contagner {
   margin-bottom: 72px;
 }
+
 .webstudio {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -896,12 +882,13 @@ input[type="checkbox"]:checked + label > span {
   .footer {
     display: flex;
     flex-wrap: wrap;
+    gap: 72px 24px;
     text-align: left;
   }
 
   .footer-contagner {
+    margin-bottom: 0;
     padding-left: 108px;
-    padding-right: 24px;
   }
 
   .container-subscribe {
@@ -914,6 +901,7 @@ input[type="checkbox"]:checked + label > span {
 
   .container-social-media {
     text-align: left;
+    margin-bottom: 0;
   }
 
   .subscribe-footer {
@@ -1004,17 +992,18 @@ input[type="checkbox"]:checked + label > span {
 
   .bigfooter {
     padding: 100px 0;
-    max-width: 1440px;
+    /* max-width: 1440px; */
   }
 
   .footer {
     display: flex;
     flex-wrap: nowrap;
+    column-gap: 0px;
   }
 
   .footer-contagner {
     padding-left: 0px;
-    padding-right: 159px;
+    /* padding-right: 159px; */
     margin-bottom: 0;
     margin-right: 120px;
   }
@@ -1034,10 +1023,6 @@ input[type="checkbox"]:checked + label > span {
 
   .container-subscribe {
     padding-left: 0px;
-  }
-
-  .footer-contagner {
-    padding-right: 0;
   }
 
   .portfolio {
@@ -1063,7 +1048,6 @@ input[type="checkbox"]:checked + label > span {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/dark-bg-1x.jpg);
-    /* max-width: 1158px; */
   }
 
   @media (min-device-pixel-ratio: 2),
