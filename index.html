@@ -27,7 +27,7 @@
 
   <body>
     <!--Шапка веб сторінки-->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container header-container">
         <nav class="nav">
           <a class="logo" href="./index.html"
@@ -35,7 +35,9 @@
           </a>
 
           <ul class="page-nav">
-            <li><a class="studio-item line" href="./index.html">Studio</a></li>
+            <li>
+              <a class="studio-item line" href="./index.html">Studio</a>
+            </li>
             <li>
               <a class="studio-item studio-item-potfolio" href="">Portfolio</a>
             </li>
@@ -59,8 +61,89 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="menu-open-btn">
+          <svg class="" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-- Модальне вікно один -->
+
+      <div class="mob-menu is-open">
+        <div>
+          <button class="menu-close-btn" type="button">
+            <svg class="mob-icon-close-button" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-li">
+              <a class="mob-menu-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-li">
+              <a class="mob-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mob-menu-li">
+              <a class="mob-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mob-contakts">
+            <li class="mob-menu-li-address">
+              <a class="mob-contakt" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-menu-li-address">
+              <a class="mob-contakt" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+
+          <div>
+            <ul class="mob-container-svg">
+              <li class="social-svg-li">
+                <a class="mob-container-link-svg" href="">
+                  <svg class="team-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-svg-li">
+                <a class="mob-container-link-svg" href="">
+                  <svg class="team-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-svg-li">
+                <a class="mob-container-link-svg" href="">
+                  <svg class="team-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-svg-li">
+                <a class="mob-container-link-svg" href="">
+                  <svg class="team-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="section-name">
@@ -696,24 +779,24 @@
       </div>
     </footer>
 
-    <!--Модальне вікно-->
-    <!-- <div class="backdrop">
-      <div class="modal">
-        <button class="modal-button" type="button">
+    <!--Модальне вікно два-->
+    <div class="mob-backdrop">
+      <div class="mob-modal">
+        <button class="mob-modal-button" type="button">
           <svg class="icon-close-button" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="leave-your-contacts">
+        <p class="mob-leave-your-contacts">
           Leave your contacts and we will call you back
         </p>
-        
-        <form class="modal-form" name="form">
-          <div class="name-modal-container">
-            <label class="name" for="user-name"> Name </label>
-            <div class="input-modal-container">
+
+        <form class="mob-modal-form" name="form">
+          <div class="mob-name-modal-container">
+            <label class="mob-name" for="user-name"> Name </label>
+            <div class="mob-input-modal-container">
               <input
-                class="name-modal"
+                class="mob-name-modal"
                 name="user-name"
                 id="user-name"
                 type="text"
@@ -724,57 +807,67 @@
             </div>
           </div>
 
-          <div class="name-modal-container">
-            <label class="name" for="phone">Phone</label>
-            <div class="input-modal-container">
-              <input class="name-modal" type="text" name="phone" id="phone" />
+          <div class="mob-name-modal-container">
+            <label class="mob-name" for="phone">Phone</label>
+            <div class="mob-input-modal-container">
+              <input
+                class="mob-name-modal"
+                type="text"
+                name="phone"
+                id="phone"
+              />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
 
-          <div class="name-modal-container">
-            <label class="name" for="email">Email</label>
-            <div class="input-modal-container">
-              <input class="name-modal" type="text" name="email" id="email" />
+          <div class="mob-name-modal-container">
+            <label class="mob-name" for="email">Email</label>
+            <div class="mob-input-modal-container">
+              <input
+                class="mob-name-modal"
+                type="text"
+                name="email"
+                id="email"
+              />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
 
-          <div class="name-modal-container-textarea">
-            <label class="name" for="user-comment">Comment</label>
+          <div class="mob-name-modal-container-textarea">
+            <label class="mob-name" for="user-comment">Comment</label>
             <textarea
-              class="modal-textarea"
+              class="mob-modal-textarea"
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
 
-          <div class="accept-modal-container">
+          <div class="mob-accept-modal-container">
             <input
-              class="input-visual-accept visually-hidden"
+              class="mob-input-visual-accept visually-hidden"
               type="checkbox"
               name="user-privacy"
               value="true"
               id="user-privacy"
             />
-            <label class="accept-modal" for="user-privacy">
-              <span class="icon-modal-wrapper">
+            <label class="mob-accept-modal" for="user-privacy">
+              <span class="mob-icon-modal-wrapper">
                 <svg class="accept-icon-modal" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="privacy-policy" href="">Privacy Policy</a>
+              <a class="mob-privacy-policy" href="">Privacy Policy</a>
             </label>
           </div>
-          <button class="modal-send" type="button">Send</button>
+          <button class="mob-modal-send" type="button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
