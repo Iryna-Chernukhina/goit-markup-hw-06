@@ -592,7 +592,7 @@ img {
 
 .bigfooter {
   background-color: #2e2f42;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding-top: 97px;
   padding-bottom: 96px;
 }
@@ -772,7 +772,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -946,6 +946,11 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  display: flex;
+}
+
+.span-two {
+  width: 231px;
 }
 
 .mob-privacy-policy {
@@ -1113,8 +1118,13 @@ img {
   }
 
   .mob-modal {
-    width: 408px;
+    min-width: 408px;
     min-height: 584px;
+    padding: 72px 25px 24px 23px;
+  }
+
+  .span-two {
+    width: 338px;
   }
 }
 
@@ -1166,18 +1176,18 @@ img {
 
   .bigfooter {
     padding: 100px 0;
-    /* max-width: 1440px; */
   }
 
   .footer {
     display: flex;
     flex-wrap: nowrap;
     column-gap: 0px;
+    width: max-content;
+    justify-content: space-between;
   }
 
   .footer-contagner {
     padding-left: 0px;
-    /* padding-right: 159px; */
     margin-bottom: 0;
     margin-right: 120px;
   }
@@ -1260,5 +1270,10 @@ img {
   .page-nav {
     margin-right: 0;
   }
+
+  .mob-modal {
+    padding: 72px 24px 24px 24px;
+  }
 }
+
 /**========================================== */
