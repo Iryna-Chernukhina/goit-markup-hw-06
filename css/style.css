@@ -255,6 +255,16 @@ img {
   list-style: none;
   margin-bottom: 48px;
 }
+
+.mob-contakt-mail {
+  color: #4d5ae5;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+
 .mob-contakt {
   text-decoration: none;
   font-size: 20px;
